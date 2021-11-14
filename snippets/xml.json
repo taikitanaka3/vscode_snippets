@@ -1,0 +1,14 @@
+{
+  "remap": {
+    "prefix": "remap",
+    "body": [" <remap from=\"$1\" to=\"(var $2)\"/>"]
+  },
+  "pkg": {
+    "prefix": "pkg",
+    "body": [" <node pkg=\"$1\" exec=\"$1_node\" name=\"$1_node\" output=\"screen\">"]
+  },
+  "arg": {
+    "prefix": "arg",
+    "body": [" <arg name=\"$1\" default=\"$2\" />"]
+  }
+}
