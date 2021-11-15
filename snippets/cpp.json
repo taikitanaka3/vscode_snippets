@@ -1,4 +1,12 @@
 {
+  "declare_parameters": {
+    "prefix": "declare_parameters",
+    "body": [
+      "const auto dp = [this](const std::string & str, auto def_val) {",
+      "\tstd::string name = \"$1.\" + str;",
+      "\treturn this->declare_parameter(name, def_val);};"
+    ]
+  },
   "rclcpp::Publisher": {
     "prefix": "rclcpp::Publisher",
     "body": ["rclcpp::Publisher<$1>::SharedPtr pub_$2;"]
